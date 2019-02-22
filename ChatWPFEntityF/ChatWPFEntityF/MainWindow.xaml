@@ -1,0 +1,29 @@
+﻿<Window x:Class="ChatWPFEntityF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatWPFEntityF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+ 
+                <Menu Name="mainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="792" Background="Chocolate">
+                    <MenuItem Header="File">
+                        <MenuItem Header="Open"></MenuItem>
+                    </MenuItem>
+
+                    <MenuItem Header="User">
+                        <MenuItem Header="Create User"></MenuItem>
+                    </MenuItem>
+                </Menu>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="332,177,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="332,231,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+                <Label  HorizontalAlignment="Left" Margin="332,149,0,0" VerticalAlignment="Top" Width="120" Height="28">Login</Label>
+                <Label  HorizontalAlignment="Left" Margin="332,205,0,0" VerticalAlignment="Top" Width="120" Height="40">Password</Label>
+                <Button Content="Button" HorizontalAlignment="Left" Margin="349,295,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB"/>
+           
+     
+
+    </Grid>
+</Window>
