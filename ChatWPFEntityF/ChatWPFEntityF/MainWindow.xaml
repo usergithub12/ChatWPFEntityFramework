@@ -5,25 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatWPFEntityF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Chat" Height="450" Width="800" Icon="C:\Users\User\Source\Repos\CourseEF\ChatWPFEntityF\ChatWPFEntityF\img\getProfilePic.jpg">
     <Grid>
- 
-                <Menu Name="mainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="792" Background="Chocolate">
-                    <MenuItem Header="File">
-                        <MenuItem Header="Open"></MenuItem>
-                    </MenuItem>
 
-                    <MenuItem Header="User">
-                        <MenuItem Header="Create User"></MenuItem>
-                    </MenuItem>
-                </Menu>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="332,177,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="332,231,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-                <Label  HorizontalAlignment="Left" Margin="332,149,0,0" VerticalAlignment="Top" Width="120" Height="28">Login</Label>
-                <Label  HorizontalAlignment="Left" Margin="332,205,0,0" VerticalAlignment="Top" Width="120" Height="40">Password</Label>
-                <Button Content="Button" HorizontalAlignment="Left" Margin="349,295,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB"/>
-           
-     
+        <Menu Name="mainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="792" Background="Chocolate">
+            <MenuItem Header="Connections">
+                <MenuItem Header="Connect" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="Disconnect"></MenuItem>
+                <MenuItem Header="Server List"></MenuItem>
+                <MenuItem Header="Quit"></MenuItem>
+            </MenuItem>
+
+            <MenuItem Header="User">
+                <MenuItem Header="Create User"></MenuItem>
+            </MenuItem>
+        </Menu>
+
+        
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="332,177,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="332,231,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label  HorizontalAlignment="Left" Margin="332,149,0,0" VerticalAlignment="Top" Width="120" Height="28">Login</Label>
+        <Label  HorizontalAlignment="Left" Margin="332,205,0,0" VerticalAlignment="Top" Width="120" Height="26">Password</Label>
+        <Button Content="Sign in" HorizontalAlignment="Left" Margin="349,295,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB"/>
+        <Button Content="Sign up" HorizontalAlignment="Left" Margin="650,367,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB"/>
+      
+
+
 
     </Grid>
 </Window>
