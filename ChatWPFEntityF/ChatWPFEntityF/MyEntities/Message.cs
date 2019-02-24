@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace ChatWPFEntityF
 {
-    public  class ContactList
+   public class Message
     {
-
+        public int Id { get; set; }
+        public string MessageText { get; set; }
+    
+      
     }
 }

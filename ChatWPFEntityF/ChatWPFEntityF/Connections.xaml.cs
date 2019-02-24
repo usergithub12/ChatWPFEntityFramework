@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +22,22 @@ namespace ChatWPFEntityF
     {
         public Connections()
         {
+
             InitializeComponent();
+
+            
+
+
+        }
+
+        private void Btn_Send_Click(object sender, RoutedEventArgs e)
+        {
+            TextBlock tb = new TextBlock();
+            tb.Text = tb_message.Text;
+            tb_message.Text = "";
+            st_show.Children.Add(tb);
+           // Message message = new Message() { MessageContent="qweqw",DateSend=}
+
         }
     }
 }

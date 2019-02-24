@@ -12,14 +12,15 @@ namespace ChatWPFEntityF
 
         public string Nickname { get; set; }
 
-        public int Age { get; set; }
-
-        public string Country { get; set; }
-
         public string Login { get; set; }
 
         public string Password { get; set; }
-        //public string ConnectionString { get; set; }
+
+        public string UserPhotoPath { get; set; }
+
+        public virtual ICollection<ChatDb> Chats { get; set; }
+
+        public virtual ContactList ContactList { get; set; }
 
 
     }

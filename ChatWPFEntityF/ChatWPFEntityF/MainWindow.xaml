@@ -10,14 +10,14 @@
 
         <Menu Name="mainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="792" Background="Chocolate">
             <MenuItem Header="Connections">
-                <MenuItem Header="Connect" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Name="Connections" Header="Connect" Click="Connections_Click"></MenuItem>
                 <MenuItem Header="Disconnect"></MenuItem>
-                <MenuItem Header="Server List"></MenuItem>
+                <MenuItem Name="ServerList" Header="Server List" Click="ServerList_Click"></MenuItem>
                 <MenuItem Header="Quit"></MenuItem>
             </MenuItem>
 
             <MenuItem Header="User">
-                <MenuItem Header="Create User"></MenuItem>
+                <MenuItem Name="CreateUser"  Header="Create User" Click="CreateUser_Click"></MenuItem>
             </MenuItem>
         </Menu>
 
@@ -27,7 +27,7 @@
         <Label  HorizontalAlignment="Left" Margin="332,149,0,0" VerticalAlignment="Top" Width="120" Height="28">Login</Label>
         <Label  HorizontalAlignment="Left" Margin="332,205,0,0" VerticalAlignment="Top" Width="120" Height="26">Password</Label>
         <Button Content="Sign in" HorizontalAlignment="Left" Margin="349,295,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB"/>
-        <Button Content="Sign up" HorizontalAlignment="Left" Margin="650,367,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB"/>
+        <Button Name="btn_signup" Content="Sign up" HorizontalAlignment="Left" Margin="650,367,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB" Click="Btn_signup_Click"/>
       
 
 

@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace ChatWPFEntityF
 {
-   public class Message
+    public  class ContactList
     {
         public int Id { get; set; }
-        public string MessageContent { get; set; }
-        public DateTime DateSend { get; set; }
-      
+        public virtual ICollection<User> Users { get; set; }
     }
 }

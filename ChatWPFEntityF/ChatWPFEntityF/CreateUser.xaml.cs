@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,27 @@ namespace ChatWPFEntityF
         public CreateUser()
         {
             InitializeComponent();
+
+            n_img.Source = new BitmapImage(new Uri(@"C:\Users\User\Source\Repos\CourseEF\ChatWPFEntityF\ChatWPFEntityF\img\no_photo.png"));
+
+        }
+
+        private void Btn_save_Click(object sender, RoutedEventArgs e)
+        {
+          //  User u = new User() { Nickname = tb_nick.Text, Age = int.Parse(tb_age.Text), Country = tb_country.Text, Login = tb_login.Text, Password = tb_password.Text, UserPhotoPath = tb_img.Text };
+        }
+
+        private void Btn_img_Click(object sender, RoutedEventArgs e)
+        {
+           
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                if (openFileDialog.ShowDialog() == true)
+                {
+                    tb_img.Text = openFileDialog.FileName;
+                    n_img.Source= new BitmapImage(new Uri(openFileDialog.FileName));
+            }
+               
+           
         }
     }
 }

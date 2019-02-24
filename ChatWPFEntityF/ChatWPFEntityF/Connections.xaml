@@ -5,14 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatWPFEntityF"
         mc:Ignorable="d"
-        Title="Connections" Height="214.655" Width="405.604">
+        Title="Connections" Height="265.597" Width="320.485">
     <Grid>
-        <StackPanel Name="st1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Name="st_show">
+            
+        </StackPanel>
+        <StackPanel Grid.Row="2" Name="st_chat">
 
-
-            <Label>Server:</Label>
-            <ComboBox       ></ComboBox>
-            <Button Background="Gray" Content="CONNECT"/>
+            <TextBox VerticalAlignment="Bottom" Name="tb_message"></TextBox>
+            <Button VerticalAlignment="Bottom" x:Name="btn_Send" Height="30" Click="Btn_Send_Click">Send</Button>
         </StackPanel>
     </Grid>
 </Window>

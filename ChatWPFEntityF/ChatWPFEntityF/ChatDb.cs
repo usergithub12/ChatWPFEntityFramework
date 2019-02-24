@@ -4,7 +4,7 @@ namespace ChatWPFEntityF
     using System.Data.Entity;
     using System.Linq;
 
-    public class Chat : DbContext
+    public class ChatDb : DbContext
     {
         // Your context has been configured to use a 'Chat' connection string from your application's 
         // configuration file (App.config or Web.config). By default, this connection string targets the 
@@ -12,8 +12,8 @@ namespace ChatWPFEntityF
         // 
         // If you wish to target a different database and/or database provider, modify the 'Chat' 
         // connection string in the application configuration file.
-        public Chat()
-            : base("name=Chat")
+        public ChatDb()
+            : base("name=ChatDb")
         {
         }
 
@@ -21,11 +21,16 @@ namespace ChatWPFEntityF
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
-    }
 
-    //public class MyEntity
-    //{
-    //    public int Id { get; set; }
-    //    public string Name { get; set; }
-    //}
+        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Message> Messages { get; set; }
+        public virtual DbSet<ContactList> ContactLists { get; set; }
+        public virtual DbSet<Chat> Chats { get; set; }
+
+        //public class MyEntity
+        //{
+        //    public int Id { get; set; }
+        //    public string Name { get; set; }
+        //}
+    }
 }
