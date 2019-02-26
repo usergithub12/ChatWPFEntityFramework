@@ -30,7 +30,10 @@ namespace ChatWPFEntityF
 
         private void Btn_save_Click(object sender, RoutedEventArgs e)
         {
-          //  User u = new User() { Nickname = tb_nick.Text, Age = int.Parse(tb_age.Text), Country = tb_country.Text, Login = tb_login.Text, Password = tb_password.Text, UserPhotoPath = tb_img.Text };
+              User u = new User() {Login = tb_login.Text, Password = tb_password.Text, UserPhotoPath = tb_img.Text };
+
+
+
         }
 
         private void Btn_img_Click(object sender, RoutedEventArgs e)

@@ -45,13 +45,13 @@ namespace ChatWPFEntityF
             //Отчеты: статистика интенсивности общения за указанный период.
 
 
-            using (ChatDb ctx = new ChatDb())
-            {
-                ctx.Users.Count();
-                ctx.SaveChanges();
+            //using (ChatDb ctx = new ChatDb())
+            //{
+            //    ctx.Users.Count();
+            //    ctx.SaveChanges();
 
 
-            }
+            //}
 
 
         }

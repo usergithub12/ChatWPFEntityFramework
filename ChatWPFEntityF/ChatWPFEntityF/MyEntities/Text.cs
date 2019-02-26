@@ -4,11 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChatWPFEntityF
+namespace ChatWPFEntityF.MyEntities
 {
-    public  class ContactList
+   public class Text
     {
         public int Id { get; set; }
-        public virtual ICollection<User> Users { get; set; }
+
+        public string TextValue { get; set; }
+        
+        public virtual Message Message { get; set; }
+
     }
 }

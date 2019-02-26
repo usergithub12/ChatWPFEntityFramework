@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatWPFEntityF"
         mc:Ignorable="d"
-        Title="CreateUser" Height="416.379" Width="800" FontSize="15" Background="Azure"  Icon="C:\Users\User\Source\Repos\CourseEF\ChatWPFEntityF\ChatWPFEntityF\img\getProfilePic.jpg" >
+        Title="CreateUser" Height="416.379" Width="800" FontSize="15" Background="Azure"   >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -17,12 +17,6 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Name="st_init" Grid.Column="1">
-            <Label Background="#FF3D46FB">Nickname:</Label>
-            <TextBox Name="tb_nick"></TextBox>
-            <Label Background="#FF3D46FB">Age:</Label>
-            <TextBox Name="tb_age"></TextBox>
-            <Label Background="#FF3D46FB">Country:</Label>
-            <TextBox Name="tb_country"></TextBox>
             <Label Background="#FF3D46FB">Login:</Label>
             <TextBox Name="tb_login"></TextBox>
             <Label Background="#FF3D46FB">Password:</Label>

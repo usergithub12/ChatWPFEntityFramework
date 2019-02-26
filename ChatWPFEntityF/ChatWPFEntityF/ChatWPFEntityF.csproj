@@ -67,12 +67,14 @@
     <Compile Include="Connections.xaml.cs">
       <DependentUpon>Connections.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MyEntities\Chat.cs" />
-    <Compile Include="MyEntities\ContactList.cs" />
     <Compile Include="CreateUser.xaml.cs">
       <DependentUpon>CreateUser.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MyEntities\ChatRoom.cs" />
     <Compile Include="MyEntities\Message.cs" />
+    <Compile Include="MyEntities\Reciever.cs" />
+    <Compile Include="MyEntities\Sender.cs" />
+    <Compile Include="MyEntities\Text.cs" />
     <Compile Include="MyEntities\User.cs" />
     <Page Include="Connections.xaml">
       <SubType>Designer</SubType>
