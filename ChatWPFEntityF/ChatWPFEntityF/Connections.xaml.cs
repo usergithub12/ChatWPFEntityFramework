@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChatWPFEntityF.MyEntities;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -25,6 +26,9 @@ namespace ChatWPFEntityF
 
             InitializeComponent();
 
+            Reciever r = new Reciever();
+            Sender s = new Sender();
+            
             
 
 
@@ -36,8 +40,9 @@ namespace ChatWPFEntityF
             tb.Text = tb_message.Text;
             tb_message.Text = "";
             st_show.Children.Add(tb);
-           // Message message = new Message() { MessageContent="qweqw",DateSend=}
 
+            Text t = new Text() { TextValue = tb_message.Text };
+            
         }
     }
 }

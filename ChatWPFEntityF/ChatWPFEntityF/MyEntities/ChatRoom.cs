@@ -9,7 +9,7 @@ namespace ChatWPFEntityF.MyEntities
    public class ChatRoom
     {
         public int Id { get; set; }
-        public virtual Reciever Reciever { get; set; }
-        public virtual Sender Sender { get; set; }
+        public virtual ICollection< Reciever> Recievers { get; set; }
+        public virtual ICollection<Sender> Senders { get; set; }
     }
 }

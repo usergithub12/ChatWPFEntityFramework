@@ -28,6 +28,9 @@ namespace ChatWPFEntityF
         {
             InitializeComponent();
 
+
+
+            //https://code.msdn.microsoft.com/How-to-use-SqlDependency-5c0da0b3
             // 3.Чат.
             //Краткое описание: Чат на основе базы данных.Клиентские приложения оставляют
             //сообщения на сервере баз данных в базе и забирают нужные им сообщения.Принцип
@@ -45,13 +48,13 @@ namespace ChatWPFEntityF
             //Отчеты: статистика интенсивности общения за указанный период.
 
 
-            //using (ChatDb ctx = new ChatDb())
-            //{
-            //    ctx.Users.Count();
-            //    ctx.SaveChanges();
+            using (ChatDb ctx = new ChatDb())
+            {
+                ctx.Users.Count();
+                ctx.SaveChanges();
 
 
-            //}
+            }
 
 
         }

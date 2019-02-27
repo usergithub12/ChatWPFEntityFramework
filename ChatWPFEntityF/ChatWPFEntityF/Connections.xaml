@@ -9,6 +9,8 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -17,10 +19,11 @@
         <StackPanel Name="st_show">
             
         </StackPanel>
-        <StackPanel Grid.Row="2" Name="st_chat">
-
+        <StackPanel Grid.Column="1" Grid.Row="1" Name="st_chat">
+            <Image Grid.Column="0"></Image>
             <TextBox VerticalAlignment="Bottom" Name="tb_message"></TextBox>
-            <Button VerticalAlignment="Bottom" x:Name="btn_Send" Height="30" Click="Btn_Send_Click">Send</Button>
+            <Button  Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" x:Name="btn_Send" Height="30" Click="Btn_Send_Click">Send</Button>
+            <Image Grid.Column="2"></Image>
         </StackPanel>
     </Grid>
 </Window>

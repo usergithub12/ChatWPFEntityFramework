@@ -11,5 +11,6 @@ namespace ChatWPFEntityF.MyEntities
         public int Id { get; set; }
         public virtual ICollection<User> Users { get; set; }
 
+        public virtual ChatRoom Chat { get; set; }
     }
 }
