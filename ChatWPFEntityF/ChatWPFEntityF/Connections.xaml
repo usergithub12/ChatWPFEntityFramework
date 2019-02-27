@@ -20,10 +20,10 @@
             
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="1" Name="st_chat">
-            <Image Grid.Column="0"></Image>
+            <Image Name="sender_img"  Grid.Column="0"></Image>
             <TextBox VerticalAlignment="Bottom" Name="tb_message"></TextBox>
             <Button  Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" x:Name="btn_Send" Height="30" Click="Btn_Send_Click">Send</Button>
-            <Image Grid.Column="2"></Image>
+            <Image Name="reciever_img"  Grid.Column="2"></Image>
         </StackPanel>
     </Grid>
 </Window>

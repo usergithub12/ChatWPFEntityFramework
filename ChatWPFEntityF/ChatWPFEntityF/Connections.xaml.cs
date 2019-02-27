@@ -28,9 +28,11 @@ namespace ChatWPFEntityF
 
             Reciever r = new Reciever();
             Sender s = new Sender();
-            
-            
 
+
+            sender_img.Source = new BitmapImage(new Uri(s.Chat.Senders.Select(u => u.Users.Select(c => c.UserPhotoPath)).ToString()));
+
+            reciever_img.Source = new BitmapImage(new Uri(s.Chat.Recievers.Select(u => u.Users.Select(c=>c.UserPhotoPath)).ToString()));
 
         }
 
@@ -42,7 +44,13 @@ namespace ChatWPFEntityF
             st_show.Children.Add(tb);
 
             Text t = new Text() { TextValue = tb_message.Text };
-            
+
+
+
+            using (ChatDb db = new ChatDb())
+            {
+              
+            }
         }
     }
 }

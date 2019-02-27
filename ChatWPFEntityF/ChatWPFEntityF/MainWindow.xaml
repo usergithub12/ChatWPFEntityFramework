@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatWPFEntityF"
         mc:Ignorable="d"
-        Title="Chat" Height="450" Width="800" >
-    <Grid>
+        Title="Chat" Height="268.966" Width="308.621" >
+    <Grid Margin="0,0,16,10">
 
         <Menu Name="mainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="792" Background="Chocolate">
             <MenuItem Header="Connections">
@@ -21,14 +21,14 @@
             </MenuItem>
         </Menu>
 
-        
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="332,177,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="332,231,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <Label  HorizontalAlignment="Left" Margin="332,149,0,0" VerticalAlignment="Top" Width="120" Height="28">Login</Label>
-        <Label  HorizontalAlignment="Left" Margin="332,205,0,0" VerticalAlignment="Top" Width="120" Height="26">Password</Label>
-        <Button Content="Sign in" HorizontalAlignment="Left" Margin="349,295,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB"/>
-        <Button Name="btn_signup" Content="Sign up" HorizontalAlignment="Left" Margin="650,367,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB" Click="Btn_signup_Click"/>
-      
+
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="16,64,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="16,118,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label  HorizontalAlignment="Left" Margin="16,36,0,0" VerticalAlignment="Top" Width="120" Height="28">Login</Label>
+        <Label  HorizontalAlignment="Left" Margin="16,92,0,0" VerticalAlignment="Top" Width="120" Height="26">Password</Label>
+        <Button  IsDefault="True" Content="Sign in" HorizontalAlignment="Left" Margin="33,182,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB"/>
+        <Button Name="btn_signup" Content="Sign up" HorizontalAlignment="Left" Margin="178,98,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB" Click="Btn_signup_Click"/>
+
 
 
 
