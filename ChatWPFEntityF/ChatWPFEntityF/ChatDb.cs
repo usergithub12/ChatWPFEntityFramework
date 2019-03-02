@@ -24,8 +24,11 @@ namespace ChatWPFEntityF
 
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Message> Messages { get; set; }
-      
-  
+        public virtual DbSet<Text> Texts { get; set; }
+        public virtual DbSet<Sender> Senders { get; set; }
+        public virtual DbSet<Reciever> Recievers { get; set; }
+        public virtual DbSet<ChatRoom> ChatRooms { get; set; }
+
 
         //public class MyEntity
         //{

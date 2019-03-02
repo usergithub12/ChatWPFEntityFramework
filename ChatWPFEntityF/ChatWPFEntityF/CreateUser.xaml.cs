@@ -20,6 +20,8 @@ namespace ChatWPFEntityF
     /// </summary>
     public partial class CreateUser : Window
     {
+        User MainUser;
+      
         public CreateUser()
         {
             InitializeComponent();
@@ -30,9 +32,19 @@ namespace ChatWPFEntityF
 
         private void Btn_save_Click(object sender, RoutedEventArgs e)
         {
-              User u = new User() {Login = tb_login.Text, Password = tb_password.Text, UserPhotoPath = tb_img.Text };
-
-
+            if (!String.IsNullOrEmpty(btn_save.Content.ToString()))
+            {
+                User u = new User() { Login = tb_login.Text, Password = tb_password.Text, UserPhotoPath = tb_img.Text };
+                MainUser = u;
+                using (ChatDb c = new ChatDb())
+                {
+                    c.Users.Add(u);
+                    c.SaveChanges();
+                }
+                //this.DialogResult = true;
+                ChatRoomWindow chatRoomWindow = new ChatRoomWindow();
+                chatRoomWindow.Show();
+            }
 
         }
 

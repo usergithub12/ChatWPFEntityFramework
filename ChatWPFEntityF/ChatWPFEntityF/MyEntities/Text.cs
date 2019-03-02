@@ -1,10 +1,12 @@
-﻿using System;
+﻿using ChatWPFEntityF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChatWPFEntityF.MyEntities
+
+namespace ChatWPFEntityF
 {
    public class Text
     {

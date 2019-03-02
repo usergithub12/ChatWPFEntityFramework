@@ -1,4 +1,4 @@
-﻿using ChatWPFEntityF.MyEntities;
+﻿using ChatWPFEntityF;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +12,8 @@ namespace ChatWPFEntityF
         public int Id { get; set; }
         public virtual ICollection<Text> Texts { get; set;}
 
-    public virtual ICollection<Sender> Senders { get; set; } 
+        public virtual ICollection<Sender> Senders { get; set; } 
 
-      public virtual ICollection <Reciever> Recievers { get; set; }
+        public virtual ICollection <Reciever> Recievers { get; set; }
     }
 }

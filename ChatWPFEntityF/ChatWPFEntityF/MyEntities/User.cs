@@ -1,4 +1,4 @@
-﻿using ChatWPFEntityF.MyEntities;
+﻿using ChatWPFEntityF;
 using System;
 using System.Collections.Generic;
 using System.Linq;

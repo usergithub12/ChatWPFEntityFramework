@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChatWPFEntityF.MyEntities
+namespace ChatWPFEntityF
 {
    public class Sender
     {
