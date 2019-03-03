@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatWPFEntityF"
         mc:Ignorable="d"
-        Title="ChatRoomWindow" Height="450" Width="800">
+        Title="ChatRoomWindow" Height="425.212" Width="445.339">
     <Grid Background="#FF9C9C9C">
 
         <Grid.RowDefinitions>
@@ -14,12 +14,12 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+          
         </Grid.ColumnDefinitions>
         <GroupBox Header="Contact List">
-        <StackPanel Name="st_users">
-          
-        </StackPanel>
+            <StackPanel Name="st_users">
+
+            </StackPanel>
         </GroupBox>
     </Grid>
 </Window>

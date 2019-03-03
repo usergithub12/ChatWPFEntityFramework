@@ -15,7 +15,6 @@
                 <!-- <MenuItem Name="ServerList" Header="Server List" Click="ServerList_Click"></MenuItem>-->
                 <MenuItem Header="Quit" Click="MenuItem_Click"></MenuItem>
             </MenuItem>
-
             <MenuItem Header="User">
                 <MenuItem Name="CreateUser"  Header="Create User" Click="CreateUser_Click"></MenuItem>
             </MenuItem>
@@ -27,7 +26,7 @@
         <Label  HorizontalAlignment="Left" Margin="16,36,0,0" VerticalAlignment="Top" Width="120" Height="28">Login</Label>
         <Label  HorizontalAlignment="Left" Margin="16,92,0,0" VerticalAlignment="Top" Width="120" Height="26">Password</Label>
         <Button  IsDefault="True" Content="Sign in" HorizontalAlignment="Left" Margin="33,182,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB"/>
-        <Button Name="btn_signup" Content="Sign up" HorizontalAlignment="Left" Margin="178,98,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB" Click="Btn_signup_Click"/>
+        <Button Name="btn_signup" Content="Sign up" HorizontalAlignment="Left" Margin="197,182,0,0" VerticalAlignment="Top" Width="75" Background="#FF3D46FB" Click="Btn_signup_Click"/>
 
 
 
