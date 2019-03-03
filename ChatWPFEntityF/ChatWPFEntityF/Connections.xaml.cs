@@ -38,11 +38,13 @@ namespace ChatWPFEntityF
                 ChatRoom chat = new ChatRoom() {/* Senders = s, Recievers = c.Messages.Select(d => d.Recievers.First()).ToList() */};
                 Reciever r = new Reciever() { Chat = chat,Users=l.Users.Where(y=>y.Login==chatr.username).ToList() };
                 Sender s = new Sender() { Chat = chat, Users = l.Users.Where(j=>j.Id==15).ToList() };
-
-
+                l.Senders.Add(s);
+                l.Recievers.Add(r);
+                l.ChatRooms.Add(chat);
+                l.SaveChanges();
 
                 sender_img.Source = new BitmapImage(new Uri(l.Users.Where(n => n.Id == 15).Single().UserPhotoPath.ToString()));//   .Select(j => j.UserPhotoPath).ToString()));
-                 reciever_img.Source = new BitmapImage(new Uri(l.Users.Where(v=>v.Login==chatr.username).Single().UserPhotoPath.ToString()));
+                // reciever_img.Source = new BitmapImage(new Uri(l.Users.Where(v=>v.Login==chatr.username).Single().UserPhotoPath.ToString()));
             }
 
         }
