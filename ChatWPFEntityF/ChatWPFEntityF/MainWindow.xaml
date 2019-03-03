@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:ChatWPFEntityF"
         mc:Ignorable="d"
         Title="Chat" Height="268.966" Width="308.621" >
-    <Grid Margin="0,0,16,10">
+    <Grid Background="#FF9C9C9C">
 
         <Menu Name="mainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="792" Background="Chocolate">
             <MenuItem Header="Connections">
                 <MenuItem Name="Connections" Header="Connect" Click="Connections_Click"></MenuItem>
                 <MenuItem Header="Disconnect"></MenuItem>
-                <MenuItem Name="ServerList" Header="Server List" Click="ServerList_Click"></MenuItem>
-                <MenuItem Header="Quit"></MenuItem>
+                <!-- <MenuItem Name="ServerList" Header="Server List" Click="ServerList_Click"></MenuItem>-->
+                <MenuItem Header="Quit" Click="MenuItem_Click"></MenuItem>
             </MenuItem>
 
             <MenuItem Header="User">

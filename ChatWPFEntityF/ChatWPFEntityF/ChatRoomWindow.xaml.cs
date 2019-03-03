@@ -19,6 +19,7 @@ namespace ChatWPFEntityF
     /// </summary>
     public partial class ChatRoomWindow : Window
     {
+        public string username { get; set; }
         public ChatRoomWindow()
         {
             InitializeComponent();
@@ -45,7 +46,7 @@ namespace ChatWPFEntityF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            username = (sender as Button).Content.ToString();
             Connections con = new Connections();
           //  if(this.DialogResult==true)
             con.Show();

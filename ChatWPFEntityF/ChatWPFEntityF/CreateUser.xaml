@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ChatWPFEntityF"
         mc:Ignorable="d"
         Title="CreateUser" Height="416.379" Width="800" FontSize="15" Background="Azure"   >
-    <Grid>
+    <Grid Background="#FF9C9C9C">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
 

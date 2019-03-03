@@ -27,20 +27,23 @@ namespace ChatWPFEntityF
             InitializeComponent();
 
 
+                ChatRoomWindow chatr = new ChatRoomWindow();
+                sender_name.Text = chatr.username;
 
-            using (ChatDb c = new ChatDb())
+            using (ChatDb l = new ChatDb())
             {
 
+               
+
                 ChatRoom chat = new ChatRoom() {/* Senders = s, Recievers = c.Messages.Select(d => d.Recievers.First()).ToList() */};
-                Reciever r = new Reciever() { Chat = chat, };
-                Sender s = new Sender() { Chat = chat };
+                Reciever r = new Reciever() { Chat = chat,Users=l.Users.Where(y=>y.Login==chatr.username).ToList() };
+                Sender s = new Sender() { Chat = chat, Users = l.Users.Where(j=>j.Id==1).ToList() };
 
 
 
+                 sender_img.Source = new BitmapImage(new Uri(l.Users.Select(j => j.UserPhotoPath).First()));
 
-                //  sender_img.Source = new BitmapImage(new Uri(c.Users.Select(u =>u.Sender.Users.Select().ToString());
-
-                //    reciever_img.Source = new BitmapImage(new Uri(s.Chat.Senders.Select(u => u.Users.First().UserPhotoPath).ToString()));
+                 reciever_img.Source = new BitmapImage(new Uri(l.Users.Where(v=>v.Login== chatr.username).Select(j => j.UserPhotoPath).ToString()));
             }
 
         }
@@ -63,6 +66,7 @@ namespace ChatWPFEntityF
                 db.SaveChanges();
                 
             };
+
            
 
     }

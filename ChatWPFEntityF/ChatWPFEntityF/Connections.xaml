@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatWPFEntityF"
         mc:Ignorable="d"
-        Title="Connections" Height="265.597" Width="320.485">
-    <Grid>
+        Title="Connections" Height="383.409" Width="476.973">
+    <Grid Background="#FF9C9C9C">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
@@ -16,13 +16,15 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-            <Image Name="sender_img"  Grid.Column="0"></Image>
+        <TextBlock  Grid.Row="0" Grid.Column="2" Name="reciever_name"></TextBlock>
+        <TextBlock  Grid.Column="0" Name="sender_name"></TextBlock>
+        <Image Name="sender_img"  Grid.Column="0"></Image>
             <Image Grid.Column="2" Name="reciever_img" Grid.Row="0" ></Image>
 
         <StackPanel Grid.Column="1" Name="tbpanel">
-            
+
         </StackPanel>
-        
+
         <StackPanel   Name="st_show" Grid.Column="1" Grid.Row="1" >
             <TextBox BorderBrush="Black"  VerticalAlignment="Bottom" Name="tb_message"></TextBox>
             <Button BorderBrush="Black" IsDefault="True" Background="#FF3D46FB" VerticalAlignment="Bottom" x:Name="btn_Send" Height="30" Click="Btn_Send_Click" Content="Send"/>

@@ -96,7 +96,7 @@ namespace ChatWPFEntityF
 
             #endregion
 
-
+            
 
             using (ChatDb ctx = new ChatDb())
             {
@@ -137,6 +137,11 @@ namespace ChatWPFEntityF
         {
             CreateUser createUser = new CreateUser();
             createUser.ShowDialog();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
